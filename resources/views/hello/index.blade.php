@@ -1,35 +1,16 @@
-<html>
+@extends('layouts.helloapp')
+@section('title', 'Index')
+@section('menubar')
+@parent
+インデックスページ
+@endsection
 
-<head>
-  <title>Hello/Index</title>
-  <style>
-    body {
-      font-size: 16pt;
-      color: #999;
-    }
+@section('content')
+<p>ここが本文のコンテンツです。</p>
+<p>Controller value<br>'message' = {{ $message }}</p>
+<p>ViewComposer value<br>'view_message' = {{ $view_message }}</p>
+@endsection
 
-    h1 {
-      font-size: 50pt;
-      text-align: right;
-      color: #f6f6f6;
-      margin: -20px 0px -30px 0px;
-      letter-spacing: -4pt;
-    }
-  </style>
-</head>
-
-<body>
-  <h1>Blade/Index</h1>
-  @if ($msg != '')
-  <p>こんにちは{{ $msg }}さん。</p>
-  @else
-  <p>hello!</p>
-  @endif
-  <form method="POST" action="/hello">
-    {{ csrf_field() }}
-    <input type="text" name="msg">
-    <input type="submit">
-  </form>
-</body>
-
-</html>
+@section('footer')
+copyright 2017 tuyano.
+@endsection
