@@ -12,10 +12,13 @@
 */
 
 // use Illuminate\Routing\Route;
+use App\Http\Middleware\HelloMiddleware;
+
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello', 'HelloController@index');
+Route::get('hello', 'HelloController@index')
+    ->middleware('hello');//kernelのhelloグループのミドルウェアが全て実行される。
 Route::post('hello', 'HelloController@post');
