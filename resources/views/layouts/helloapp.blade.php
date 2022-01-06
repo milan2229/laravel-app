@@ -43,6 +43,18 @@
       border-bottom: solid 1px #ccc;
       color: #ccc;
     }
+
+    th {
+      background-color: #999;
+      color: fff;
+      padding: 5px 10px;
+    }
+
+    td {
+      border: solod 1px #aaa;
+      color: #999;
+      padding: 5px 10px;
+    }
   </style>
 </head>
 
