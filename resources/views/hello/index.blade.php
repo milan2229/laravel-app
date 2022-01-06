@@ -16,7 +16,7 @@
   <tr>
     <td>{{ $item->name }}</td>
     <td>{{ $item->mail }}</td>
-    <td>{{ $item->Field4 }}</td>
+    <td>{{ $item->age }}</td>
   </tr>
   @endforeach
 </table>

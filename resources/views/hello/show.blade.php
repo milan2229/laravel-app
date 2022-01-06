@@ -25,7 +25,7 @@
   </tr>
   <tr>
     <th width="50px">age:</th>
-    <td></td>{{ $item->Field4 }}
+    <td></td>{{ $item->age }}
   </tr> -->
 </table>
 @endforeach

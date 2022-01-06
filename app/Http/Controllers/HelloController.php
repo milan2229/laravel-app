@@ -38,7 +38,7 @@ class HelloController extends Controller
         $param = [
             'name' => $request->name,
             'mail' => $request->mail,
-            'Field4' => $request->Field4,
+            'age' => $request->age,
         ];
         DB::table('people')->insert($param);
         return redirect('/hello');
@@ -55,7 +55,7 @@ class HelloController extends Controller
         $param = [
             'name' => $request->name,
             'mail' => $request->mail,
-            'Field4' => $request->Field4
+            'age' => $request->age
         ];
         DB::table('people')->where('id', $request->id)->update($param);
         return redirect('/hello');

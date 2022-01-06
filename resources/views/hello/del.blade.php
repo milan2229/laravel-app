@@ -22,7 +22,7 @@
     </tr>
     <tr>
     <th>age: </th>
-    <td>{{ $form->Field4 }}</td>
+    <td>{{ $form->age }}</td>
     </tr>
     <tr>
       <th></th>
